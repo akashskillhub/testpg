@@ -2,6 +2,7 @@
   "name": "react-chart-example",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://akashskillhub.github.io/testpg",
   "dependencies": {
     "@faker-js/faker": "^7.3.0",
     "@fullcalendar/daygrid": "^5.11.3",
@@ -23,7 +24,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "copy build backend"
+    "postbuild": "copy build backend",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
